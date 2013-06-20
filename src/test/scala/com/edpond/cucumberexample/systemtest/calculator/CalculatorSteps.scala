@@ -10,7 +10,7 @@ import junit.framework.Assert._
 
 @Test
 @RunWith(classOf[Cucumber])
-@Cucumber.Options(format = Array("junit:target/junit"))
+@Cucumber.Options(format = Array("progress", "junit:target/junit"))
 class CalculatorSteps extends ScalaDsl with EN with ShouldMatchers {
 
   var input = ""
